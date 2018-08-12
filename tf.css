@@ -7,13 +7,11 @@
 Table of contents
 - Typography
 - Buttons
-- Links
 - Forms
 - Lists
 - Tables
 - Code
 - Navigation
-- Spacing
 - Utilities
 */
 
@@ -108,9 +106,29 @@ a { color: dodgerblue }
 
 
 
-/*
-- Forms
-- Lists*/
+/* Forms */
+form {
+    font-family: 'Raleway', sans-serif; 
+    font-size: 90%;
+}
+
+
+/* Lists
+*/
+ul { list-style: circle inside; }
+ol { list-style: decimal inside; }
+
+ol, ul {
+    padding-left: 0; margin-top: 0; 
+}
+
+ul ul,  ul ol,  ol ol,  ol ul {
+    margin: 0 0 0 3rem; font-size: 90%; 
+}
+
+li { font-family: 'Raleway', sans-serif; }
+
+
 
 /* Tables */
 table {border-collapse: collapse;width: 100%;}
@@ -124,7 +142,7 @@ tr:hover {background-color:#f5f5f5;}
 /* Code */
 pre, code {
     font-family: monospace, monospace;
-    font-size: 90%;
+    font-size: 85%;
 }
 
 pre {
@@ -135,7 +153,7 @@ pre {
 
 pre > code {
     display: block;
-    padding: 1rem;
+    padding-left: 1rem;
     word-wrap: normal;
 }
 
