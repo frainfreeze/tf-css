@@ -1,0 +1,62 @@
+/* page layout */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 1.2em;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 20% 1fr 20%;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: 
+  "sidebar-pri header  sidebar-alt" 
+  "sidebar-pri content sidebar-alt" 
+  "footer      footer  footer";
+}
+
+.main-header {
+  grid-area: header;
+  margin-top: 10rem;
+}
+
+.main-footer {
+  grid-area: footer;
+}
+
+.primary-sidebar,
+.secondary-sidebar {
+  background: white;
+}
+
+.primary-sidebar {
+  grid-area: sidebar-pri;
+}
+
+.secondary-sidebar {
+  grid-area: sidebar-alt;
+}
+
+.content {
+  background: white;
+  grid-area: content;
+}
+
+.content2 {
+  background: white;
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  height: 36vh;
+}
+
+.row {
+  flex: auto auto;
+  display: flex;
+}
+
+.a, .b {
+  flex: 0 0 auto;
+  width: 50%;
+}
