@@ -48,7 +48,7 @@ body {
   grid-area: content;
   display: flex;
   flex-direction: column;
-  height: 36vh;
+  height: auto;
 }
 
 .row {
