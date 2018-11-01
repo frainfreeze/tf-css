@@ -2,11 +2,33 @@
 <head>
     <title>tf.css demo</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
-    <link rel="stylesheet" href="tf.min.css">
+    <link rel="stylesheet" href="tf.css">
     <link rel="stylesheet" href="demo.css">
+    <style>
+    body {
+        margin-top: 10rem;
+        font-size: 1.2em;
+        height: 100vh;
+    }
+
+.row div {
+
+border: 1px solid #ccc;
+min-height: 20px;
+font-size: 0.8em;
+text-align: center;
+line-height: 18px;
+text-overflow: ellipsis;
+white-space: nowrap;
+overflow: hidden;
+
+}
+
+    </style>
 </head>
 
 <body>
+    <div class="container">
     <header class="main-header">
         <div class='centered'>
             <h3>tf.css - small, responsive boilerplate.</h3>
@@ -15,9 +37,8 @@
         <br><br><br><br>
     </header>
 
-    <main class="content">
     <div class="typography">
-            <h5>Typography</h5> <hr>
+            <h5>Typography</h5>
 
             <main class="content2">
                 <div class="row">
@@ -31,7 +52,7 @@
                     </aside>
                     <aside class="b centered">
                         <p>Lorem ipsum <strong>dolor sit amet</strong>, consectetur <em>adipiscing elit</em>, sed do <a>eiusmod tempor</a> incididunt ut labore et <u>dolore magna aliqua</u>.
-                        <br /><br />
+                        <br>
                         <p class="subtle">Lorem ipsum <strong>dolor sit amet</strong>, consectetur <em>adipiscing elit</em>, sed do <a>eiusmod tempor</a> incididunt ut labore et <u>dolore magna aliqua</u>.
                     </aside>
                 </div>
@@ -43,15 +64,15 @@
 <span style="color: #007700">&lt;h3&gt;</span>Heading<span style="color: #007700">&lt;span</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;subtle&quot;</span><span style="color: #007700">&gt;</span> <span style="color: #007700">&lt;code&gt;</span><span style="color: #880000; font-weight: bold">&amp;lt;</span>h3<span style="color: #880000; font-weight: bold">&amp;gt;</span><span style="color: #007700">&lt;/code&gt;</span> 2.4rem<span style="color: #007700">&lt;/span&gt;&lt;/h3&gt;</span>
 <span style="color: #007700">&lt;h4&gt;</span>Heading<span style="color: #007700">&lt;span</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;subtle&quot;</span><span style="color: #007700">&gt;</span> <span style="color: #007700">&lt;code&gt;</span><span style="color: #880000; font-weight: bold">&amp;lt;</span>h4<span style="color: #880000; font-weight: bold">&amp;gt;</span><span style="color: #007700">&lt;/code&gt;</span> 1.8rem<span style="color: #007700">&lt;/span&gt;&lt;/h4&gt;</span>
 <span style="color: #007700">&lt;h5&gt;</span>Heading<span style="color: #007700">&lt;span</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;subtle&quot;</span><span style="color: #007700">&gt;</span> <span style="color: #007700">&lt;code&gt;</span><span style="color: #880000; font-weight: bold">&amp;lt;</span>h5<span style="color: #880000; font-weight: bold">&amp;gt;</span><span style="color: #007700">&lt;/code&gt;</span> 1.5rem<span style="color: #007700">&lt;/span&gt;&lt;/h5&gt;</span>
-<span style="color: #007700">&lt;h6&gt;</span>Heading<span style="color: #007700">&lt;span</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;subtle&quot;</span><span style="color: #007700">&gt;</span> <span style="color: #007700">&lt;code&gt;</span><span style="color: #880000; font-weight: bold">&amp;lt;</span>h6<span style="color: #880000; font-weight: bold">&amp;gt;</span><span style="color: #007700">&lt;/code&gt;</span> 1rem<span style="color: #007700">&lt;/span&gt;&lt;/h6&gt;</span><br />
-<span style="color: #007700">&lt;p&gt;</span>Lorem ipsum <span style="color: #007700">&lt;strong&gt;</span>dolor sit amet<span style="color: #007700">&lt;/strong&gt;</span>,<br />consectetur <span style="color: #007700">&lt;em&gt;</span>adipiscing elit<span style="color: #007700">&lt;/em&gt;</span>, <br />sed do <span style="color: #007700">&lt;a&gt;</span>eiusmod tempor<span style="color: #007700">&lt;/a&gt;</span> incididunt ut labore <br />et <span style="color: #007700">&lt;u&gt;</span>dolore magna aliqua<span style="color: #007700">&lt;/u&gt;</span>.<br />
+<span style="color: #007700">&lt;h6&gt;</span>Heading<span style="color: #007700">&lt;span</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;subtle&quot;</span><span style="color: #007700">&gt;</span> <span style="color: #007700">&lt;code&gt;</span><span style="color: #880000; font-weight: bold">&amp;lt;</span>h6<span style="color: #880000; font-weight: bold">&amp;gt;</span><span style="color: #007700">&lt;/code&gt;</span> 1rem<span style="color: #007700">&lt;/span&gt;&lt;/h6&gt;</span><br>
+<span style="color: #007700">&lt;p&gt;</span>Lorem ipsum <span style="color: #007700">&lt;strong&gt;</span>dolor sit amet<span style="color: #007700">&lt;/strong&gt;</span>,<br>consectetur <span style="color: #007700">&lt;em&gt;</span>adipiscing elit<span style="color: #007700">&lt;/em&gt;</span>, <br>sed do <span style="color: #007700">&lt;a&gt;</span>eiusmod tempor<span style="color: #007700">&lt;/a&gt;</span> incididunt ut labore <br>et <span style="color: #007700">&lt;u&gt;</span>dolore magna aliqua<span style="color: #007700">&lt;/u&gt;</span>.<br>
 <span style="color: #007700">&lt;p</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;subtle&quot;</span><span style="color: #007700">&gt;</span>Lorem ipsum...</span>
             </code></pre>
 
     </div>
     
-    <div class="Buttons"><br /><br />
-            <h5>Buttons</h5> <hr>
+    <div class="Buttons"><br>
+            <h5>Buttons</h5>
             <a class="button" href="">Button</a>
             <a class="button-shadow" href="">Button</a>            
             <a class="button-blue-shadow" href="">Button</a>
@@ -70,8 +91,8 @@
             </code></pre>
     </div>
 
-    <div class="Forms"><br /><br />
-        <h5>Forms</h5> <hr>
+    <div class="Forms"><br>
+        <h5>Forms</h5>
         <form action="/action_page.php">
             <fieldset>
               <legend>Personal information:</legend>
@@ -110,8 +131,8 @@
 
     </div>
 
-    <div class="Lists"><br /><br />
-        <h5>Lists</h5> <hr>
+    <div class="Lists"><br>
+        <h5>Lists</h5>
         <ul>
             <li>Coffee</li>
             <li>Tea
@@ -122,7 +143,7 @@
             </li>
             <li>Milk</li>
         </ul>
-        <br />
+        <br>
         <pre><code>
 <span style="color: #007700">&lt;ul&gt;</span>
     <span style="color: #007700">&lt;li&gt;</span>Coffee<span style="color: #007700">&lt;/li&gt;</span>
@@ -138,8 +159,8 @@
 
     </div>
 
-    <div class="Tables"><br /><br />
-        <h5>Tables</h5> <hr>
+    <div class="Tables"><br>
+        <h5>Tables</h5>
         <div style="overflow-x:auto;">
             <table>
                 <tr>
@@ -164,7 +185,7 @@
                 </tr>
             </table>
         </div>
-        <br />
+        <br>
         <pre><code> <!-- HTML generated using hilite.me -->
 <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">style=</span><span style="background-color: #fff0f0">&quot;overflow-x:auto;&quot;</span><span style="color: #007700">&gt;</span>
     <span style="color: #007700">&lt;table&gt;</span>
@@ -182,8 +203,8 @@
 
     </div>
 
-    <div class="Navigation"><br /><br />
-        <h5>Navigation</h5> <hr>
+    <div class="Navigation"><br>
+        <h5>Navigation</h5>
         <div class="nav">
             <ul>
                 <li><a href="#intro">Intro</a></li>
@@ -192,7 +213,7 @@
                 <li><a href="#github">Github</a></li>
             </ul>
         </div>
-        <br />
+        <br>
         <pre><code> <!-- HTML generated using hilite.me -->
 <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;nav&quot;</span><span style="color: #007700">&gt;</span>
     <span style="color: #007700">&lt;ul&gt;</span>
@@ -204,22 +225,57 @@
     </code></pre>
     </div>
 
-    <!--<div class=""><br /><br />
-        <h5>Grid</h5> <hr>
-    </div> -->
+    <div class=""><br>
+        <h5>Grid</h5>
+        <div class="row">
+            <div class="col-1">col-1</div>
+            <div class="col-1">col-1</div>
+            <div class="col-1">col-1</div>
+            <div class="col-1">col-1</div>
+            <div class="col-1">col-1</div>
+            <div class="col-1">col-1</div>
+            <div class="col-1">col-1</div>
+            <div class="col-1">col-1</div>
+            <div class="col-1">col-1</div>
+            <div class="col-1">col-1</div>
+            <div class="col-1">col-1</div>
+            <div class="col-1">col-1</div>
+            <div class="col-1">col-1</div>
+            <div class="col-11">col-11</div>
+            <div class="col-2">col-2</div>
+            <div class="col-10">col-10</div>
+            <div class="col-3">col-3</div>
+            <div class="col-9">col-9</div>
+            <div class="col-4">col-4</div>
+            <div class="col-8">col-8</div>
+            <div class="col-5">col-5</div>
+            <div class="col-7">col-7</div>
+            <div class="col-6">col-6</div>
+            <div class="col-6">col-6</div>
+            <div class="col-12">col-12</div>
+        </div>
 
-    <div class="Utilities"><br /><br />
-        <h5>Utilities</h5> <hr>
+        <pre><code> <!-- HTML generated using hilite.me -->
+<span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;row&quot;</span><span style="color: #007700">&gt;</span>
+    <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;col-6&quot;</span><span style="color: #007700">&gt;</span>col-6<span style="color: #007700">&lt;/div&gt;</span>
+    <span style="color: #007700">&lt;div</span> <span style="color: #0000CC">class=</span><span style="background-color: #fff0f0">&quot;col-6&quot;</span><span style="color: #007700">&gt;</span>col-6<span style="color: #007700">&lt;/div&gt;</span>
+<span style="color: #007700">&lt;/div&gt;</span>
+        </pre></code>
+
+
+    </div>
+
+    <div class="Utilities"><br>
+        <h5>Utilities</h5>
         <pre><code>
         .centered - centers element
         hr - draws horizontal line
         </code></pre>
     </div>
-
-    </main>
     
     <!-- <footer class="main-footer">
         <p>Footer</p>
     </footer> -->
+    </div>
 </body>
 </html>
