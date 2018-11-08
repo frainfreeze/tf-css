@@ -1,5 +1,5 @@
 /*
-* tf.css v0.2
+* tf.css v0.3
 * Copyright 2018, Tomislav Kucar
 * Free to use under the MIT license.
 * http://github.com/frainfreeze/tf-css
@@ -190,95 +190,75 @@ pre > code {
     background-color: #fff;
 }
 
+@media screen and (max-width: 600px){
+  .nav li {float: none;}
+}
 
 
 /* grid */
 .row {
-    clear: both;
-    -ms-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  .row > div {
-    margin: 0.5208333333333334% 1.0416666666666667%;
-    float: left;
-    -ms-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  .row .col-0 {
-    display: none;
-  }
-  .row .col-1 {
-    width: 6.25%;
-  }
-  .row .col-2 {
-    width: 14.583333333333334%;
-  }
-  .row .col-3 {
-    width: 22.916666666666668%;
-  }
-  .row .col-4 {
-    width: 31.250000000000004%;
-  }
-  .row .col-5 {
-    width: 39.583333333333336%;
-  }
-  .row .col-6 {
-    width: 47.91666666666667%;
-  }
-  .row .col-7 {
-    width: 56.25000000000001%;
-  }
-  .row .col-8 {
-    width: 64.58333333333334%;
-  }
-  .row .col-9 {
-    width: 72.91666666666667%;
-  }
-  .row .col-10 {
-    width: 81.25%;
-  }
-  .row .col-11 {
-    width: 89.58333333333334%;
-  }
-  .row .col-12 {
-    width: 97.91666666666667%;
-  }
-  .container {
-    width: 960px;
-    margin: auto;
-  }
-  .i-img img {
-    max-width: 100%;
-  }
-  
+  clear: both;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.row > div {
+  margin: 0.5208333333333334% 1.0416666666666667%;
+  float: left;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.row .col-0 {
+  display: none;
+}
+.row .col-1 {
+  width: 6.25%;
+}
+.row .col-2 {
+  width: 14.583333333333334%;
+}
+.row .col-3 {
+  width: 22.916666666666668%;
+}
+.row .col-4 {
+  width: 31.250000000000004%;
+}
+.row .col-5 {
+  width: 39.583333333333336%;
+}
+.row .col-6 {
+  width: 47.91666666666667%;
+}
+.row .col-7 {
+  width: 56.25000000000001%;
+}
+.row .col-8 {
+  width: 64.58333333333334%;
+}
+.row .col-9 {
+  width: 72.91666666666667%;
+}
+.row .col-10 {
+  width: 81.25%;
+}
+.row .col-11 {
+  width: 89.58333333333334%;
+}
+.row .col-12 {
+  width: 97.91666666666667%;
+}
+.container {
+  width: 960px;
+  margin: auto;
+}
 @media only screen and (max-width: 960px) {
   .container {
     width: 100%;
   }
 }
-/*tablet*/
-@media only screen and (min-width: 320px) and (max-width: 1024px) {
-  .row .col-tl-0 {
-    display: none;
-  }
-  .row .col-tl-1 {
-    width: 22.916666666666668%;
-  }
-  .row .col-tl-2 {
-    width: 47.91666666666667%;
-  }
-  .row .col-tl-3 {
-    width: 72.91666666666667%;
-  }
-  .row .col-tl-4 {
-    width: 97.91666666666667%;
-  }
-}
-
 
 
 /* Utilities */
